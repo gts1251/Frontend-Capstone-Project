@@ -1,0 +1,233 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  background-color: #495e57;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ce892fb7;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+.header {
+  background-color: #495e57;
+  color: white;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Makes the header take full viewport height */
+  box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin-top: 20px; /* Add space if needed */
+}
+
+.text {
+  max-width: 50%;
+  text-align: center; /* Center text content horizontally */
+}
+
+.restaurant-name {
+  font-size: 3em;
+  color: #f4ce14;
+}
+
+.reserve-btn {
+  background-color: #f4ce14;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.booking-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.booking-form input, .booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #495e57;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.cancel-btn {
+  background-color: #f4ce14;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.footer {
+  background-color: #495e57;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 701px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+.confirmed-booking {
+  background-color: #495e57;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.confirmation-container {
+  background: #f4ce14;
+  color: #333;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.confirmation-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.confirmation-container p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.booking-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.booking-details h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.booking-details p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
