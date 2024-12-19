@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  background-color: #495e57;
+  background-color: #a52f56;
   flex-direction: column;
 }
 
@@ -57,7 +57,7 @@ button {
 
 
 .header {
-  background-color: #495e57;
+  background-color: #a52f56;
   color: white;
   padding: 50px 10%;
   display: flex;
@@ -156,7 +156,7 @@ button {
 
 
 .footer {
-  background-color: #495e57;
+  background-color: #a52f56;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -197,7 +197,7 @@ button {
 }
 
 .confirmation-container {
-  background: #f4ce14;
+  background: #ac820f;
   color: #333;
   padding: 40px;
   border-radius: 15px;
@@ -230,4 +230,3 @@ button {
   margin: 5px 0;
   font-size: 1.1em;
 }
-
